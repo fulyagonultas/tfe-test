@@ -1,0 +1,29 @@
+name: "Terraform"
+on:
+  push:
+  paths:
+    - '**.tf'
+    - '**.yml'
+    - '**.tfvars'
+    - '**.tpl'
+    - '**.conf'
+    - '**.sh'
+
+  pull_request:
+    paths:
+      - '**.tf'
+      - '**.yml'
+      - '**.tfvars'
+      - '**.tpl'
+      - '**.conf'
+      - '**.sh'
+
+jobs:
+  terraform-docs:
+    uses: cloud/terraform-snippets/.github/workflows/terraform_docs.yml@ul279/tf-docs
+    secrets: inherit
+
+
+
+
+

@@ -1,0 +1,12 @@
+gcp_project        = "dbg-tfe-dev-a021ca6e"
+gcp_region         = "europe-west3"
+gcp_zone           = "europe-west3-a"
+instance_name      = "tfe-demo"
+machine_type       = "e2-micro"
+image              = "debian-cloud/debian-11"
+networking_project = "dbg-network-dev-4743a8f0"
+network_tier       = "PREMIUM"
+subnetwork         = "europe-west3-dev-cloud"
+network_ip         = ""
+external_ip        = false
+can_ip_forward     = false
