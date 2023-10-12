@@ -1,0 +1,31 @@
+# Ansible retry
+*.retry
+
+# Non-specified backup files
+*.bak
+
+# Terraform cache objects
+.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Terraform lock file
+*.lock.hcl
+
+# For built boxes
+*.box
+secret.json
+
+# IntelliJ IDEA files
+.idea/
+
+# some Microsoft IDE
+.vscode/
+
+# OSX custom attributes
+.DS_Store
+
+# Log files
+*.log

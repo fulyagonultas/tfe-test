@@ -1,0 +1,11 @@
+name: "Terraform: Validate code"
+
+on:
+  pull_request:
+    paths:
+      - '**.tf'
+      - '**.tfvars'
+
+jobs:
+  terraform-validate:
+    uses: terraform/terraform-workflows/.github/workflows/terraform_validate.yml@main

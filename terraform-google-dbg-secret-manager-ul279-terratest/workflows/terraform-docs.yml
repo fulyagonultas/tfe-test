@@ -1,0 +1,12 @@
+name: "Terraform: Generate docs"
+
+on:
+  pull_request:
+    paths:
+      - '**.tf'
+      - '**.tfvars'
+
+jobs:
+  terraform-docs:
+    if: contains( github.event.pull_request.labels.*.name, 'documentation')
+    uses: terraform/terraform-workflows/.github/workflows/terraform_docs.yml@main

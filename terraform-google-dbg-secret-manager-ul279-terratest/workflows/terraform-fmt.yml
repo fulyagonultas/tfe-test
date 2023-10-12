@@ -1,0 +1,11 @@
+name: "Terraform: Format code"
+
+on:
+  pull_request:
+    paths:
+      - '**.tf'
+      - '**.tfvars'
+
+jobs:
+  terraform-format:
+    uses: terraform/terraform-workflows/.github/workflows/terraform_fmt.yml@main

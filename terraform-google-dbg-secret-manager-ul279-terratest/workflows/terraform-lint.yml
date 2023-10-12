@@ -1,0 +1,11 @@
+name: "Terraform: Lint code"
+
+on:
+  pull_request:
+    paths:
+      - '**.tf'
+      - '**.tfvars'
+
+jobs:
+  terraform-lint:
+    uses: terraform/terraform-workflows/.github/workflows/terraform_lint.yml@main

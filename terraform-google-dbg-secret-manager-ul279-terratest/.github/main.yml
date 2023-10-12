@@ -1,0 +1,15 @@
+name: "Terraform: Terratest Automated Testing"
+
+on:
+  push:
+    paths:
+      - '**.tf'
+      - '**.tfvars'
+      - '**.yml'
+      - '**.go'
+
+jobs:
+
+  terratest:
+    uses: fulyagonultas/terraform-workflows/.github/workflows/terratest.yml@main
+    secrets: inherit
